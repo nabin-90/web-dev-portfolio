@@ -6,6 +6,7 @@
 * {
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
         font-family: "Open Sans", sans-serif;
 }
 
@@ -326,9 +327,9 @@ nav ul li a {
         grid-auto-rows: 250px;
         grid-template-areas:
 
-        "one two three"
-        "four two six"
-        "four five six";
+                "one two three"
+                "four two six"
+                "four five six";
 }
 
 .gallery img {
@@ -364,14 +365,70 @@ nav ul li a {
    Amazing works End
 ==================== */
 /* ===================
-        Navbar Start
+        Footer Start
 ==================== */
+footer {
+        padding: 130px 0;
+}
+
+.footer {
+        background-color: #FFF8F3;
+        display: flex;
+        gap: 115px;
+        padding: 130px 20px 50px;
+        border-radius: 10px;
+
+}
+
+.footer .footer_left {
+        flex: 1;
+}
+
+.footer .footer_right {
+        flex: 1;
+}
+
+.footer .footer_left h2 {
+        font-size: 35px;
+        font-weight: 700;
+        color: var(--primary);
+}
+
+.footer .footer_left p {
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--secondary);
+        padding: 20px 0 30px;
+}
+
+.footer .footer_left .socials {
+        display: flex;
+        gap: 24px;
+}
+
+.footer .footer_left .socials a {
+        font-size: 24px;
+        color: var(--brand);
+}
+
+.footer .footer_right h2 {
+        font-size: 35px;
+        font-weight: 700;
+        color: var(--primary);
+        padding-bottom: 20px;
+}
+
+.footer .footer_right form input,
+textarea {
+        border: none;
+        padding: 18px 30px 18px;
+        border-radius: 5px;
+        display: block;
+        width: 100%;
+        margin-bottom: 24px;
+        background-color: white;
+}
+
 /* ===================
-        Navbar End
-==================== */
-/* ===================
-        Navbar Start
-==================== */
-/* ===================
-        Navbar End
+        Footer End
 ==================== */
