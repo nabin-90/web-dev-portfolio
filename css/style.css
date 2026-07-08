@@ -1,180 +1,209 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 /* =======================
          Reset CSS
 ======================= */
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "Open Sans", sans-serif;
+* {
+        margin: 0;
+        padding: 0;
+        font-family: "Open Sans", sans-serif;
 }
-a{
-    text-decoration: none;
+
+a {
+        text-decoration: none;
 }
-img{
+
+img {
         width: 100%;
         max-width: 100%;
         vertical-align: middle;
 }
-.container{
-    width: 1200px;
-    margin: auto;
-    max-width: 1200px;
+
+.container {
+        width: 1200px;
+        margin: auto;
+        max-width: 1200px;
 }
-.row{
+
+.row {
         display: flex;
 }
+
 /* =====================
        Common CSS
 ===================== */
-:root{
-    --primary: #181818;
-    --secondary: #474747;
-    --p: #757575;
-    --brand: #FD6E0A;
+:root {
+        --primary: #181818;
+        --secondary: #474747;
+        --p: #757575;
+        --brand: #FD6E0A;
 
 }
-.common_btn{
-    padding: 18px 35px;
-    background-color: var(--brand);
-    border-radius: 5px;
-    border: navajowhite;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 800;
-    cursor: pointer;
+
+.common_btn {
+        padding: 18px 35px;
+        background-color: var(--brand);
+        border-radius: 5px;
+        border: navajowhite;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 800;
+        cursor: pointer;
 }
-.outline_btn{
-    padding: 18px 35px;
-    background-color: transparent;
-    border-radius: 5px;
-    border: navajowhite;
-    color: var(--brand);
-    font-size: 20px;
-    font-weight: 800;
-    cursor: pointer;
-    border: 1px solid #FD6E0A;
+
+.outline_btn {
+        padding: 18px 35px;
+        background-color: transparent;
+        border-radius: 5px;
+        border: navajowhite;
+        color: var(--brand);
+        font-size: 20px;
+        font-weight: 800;
+        cursor: pointer;
+        border: 1px solid #FD6E0A;
 }
+
 /* ===================
         Navbar Start
 ==================== */
 /* ===================
         Navbar End
 ==================== */
-nav{
-    display: flex;
-    justify-content: space-between;
-    padding: 8px 0;
+nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
 }
-.logo{
-    font-size: 45px;
-    font-weight: 800;
-    color: var(--primary);
+
+.logo {
+        font-size: 45px;
+        font-weight: 800;
+        color: var(--primary);
 }
-.logo span{
-    color: var(--brand);
+
+.logo span {
+        color: var(--brand);
 }
-nav ul{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    list-style: none;
+
+nav ul {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        list-style: none;
 }
-nav ul li a{
-    font-size: 20px;
-    font-weight: 400;
-    color: var(--secondary);
+
+nav ul li a {
+        font-size: 20px;
+        font-weight: 400;
+        color: var(--secondary);
 }
+
 /* ===================
         Navbar End
 ==================== */
 /* ===================
         Banner Start
 ==================== */
-.banner_parent{
-    display: flex;
-    justify-content: space-between;
-    background-color: rgba(234, 207, 188, 0.30);
+.banner_parent {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(234, 207, 188, 0.30);
 }
-.banner_left h2{
-    font-size: 45px;
-    font-weight: 600;
-    color: var(--secondary);
+
+.banner_left h2 {
+        font-size: 45px;
+        font-weight: 600;
+        color: var(--secondary);
 }
-.banner_left h3{
-    font-size: 85px;
-    font-weight: 700;
-    color: var(--primary);
-    padding: 5px 0 20px;
+
+.banner_left h3 {
+        font-size: 85px;
+        font-weight: 700;
+        color: var(--primary);
+        padding: 5px 0 20px;
 }
-.banner_left p{
-    font-size: 18px;
-    font-weight: 400;
-    color: var(--primary);
-    padding-bottom: 30px;
+
+.banner_left p {
+        font-size: 18px;
+        font-weight: 400;
+        color: var(--primary);
+        padding-bottom: 30px;
 }
-.banner_btn{
-    display: flex;
-    gap: 30px;
+
+.banner_btn {
+        display: flex;
+        gap: 30px;
 }
+
 /* ===================
         Banner End
 ==================== */
 /* ===================
         About Start
 ==================== */
-#about{
+#about {
         padding-top: 130px;
 }
-#about .row{
+
+#about .row {
         background-color: #FFF8F3;
         flex-direction: column;
         padding: 130px 155px;
 }
-.top_col{
+
+.top_col {
         text-align: center;
 }
-.top_col h2{
+
+.top_col h2 {
         font-size: 35px;
         font-weight: 700;
         color: var(--primary);
 }
-.top_col p{
+
+.top_col p {
         font-size: 18px;
         font-weight: 400;
         color: var(--p);
         padding: 30px 0;
 }
-.bottom_col{
+
+.bottom_col {
         display: flex;
         gap: 50px;
 }
-.info p{
+
+.info p {
         font-size: 20px;
         font-weight: 400;
         color: var(--p);
         text-align: center;
 }
-.info h3{
+
+.info h3 {
         font-size: 20px;
         font-weight: 700;
         color: var(--secondary);
 }
+
 /* ===================
         About End
 ==================== */
 /* ===================
         What I Do Start
 ==================== */
-#what_i_do{
+#what_i_do {
         padding-top: 130px;
         margin: auto;
 }
-.what_i_do .top_col h2{
+
+.what_i_do .top_col h2 {
         font-size: 35px;
         font-weight: 700;
         color: var(--primary);
 }
-.what_i_do .top_col p{
+
+.what_i_do .top_col p {
         max-width: 910px;
         margin: auto;
         text-align: center;
@@ -183,27 +212,32 @@ nav ul li a{
         color: var(--p);
         padding: 30px 0 50px;
 }
-.what_i_do .bottom_col .card{
+
+.what_i_do .bottom_col .card {
         padding: 30px;
-        box-shadow: 0px 6px 50px 0px rgba(0,0,0,0.06);
+        box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
         border-radius: 5px;
 }
-.what_i_do .bottom_col h2{
+
+.what_i_do .bottom_col h2 {
         font-size: 20px;
         font-weight: 700;
         color: var(--primary);
         padding: 30px 0 20px;
 }
-.what_i_do .bottom_col p{
+
+.what_i_do .bottom_col p {
         font-size: 16px;
         font-weight: 400;
         color: var(--p);
 }
-.what_i_do .bottom_col .card img{
+
+.what_i_do .bottom_col .card img {
         width: 50px;
         object-fit: cover;
 }
-.what_i_do .bottom_col .card_img{
+
+.what_i_do .bottom_col .card_img {
         display: flex;
         gap: 10px;
 }
@@ -214,62 +248,120 @@ nav ul li a{
 /* ===================
         Resume Start
 ==================== */
-#resume{
-        padding: 130px;
+#resume {
+        padding-top: 130px;
         margin: auto;
 }
-.resume{
-        background-color: pink; 
-}
-.resume h2{
+
+.resume h2 {
         font-size: 35px;
         font-weight: 700;
         color: var(--primary);
         text-align: center;
         padding-bottom: 110px;
 }
-.resume .details_col{
+
+.resume .details_col {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 24px;
 }
-.resume .details_col .details h3{
+
+.resume .details_col .details h3 {
         font-size: 30px;
         font-weight: 700;
         color: var(--secondary);
 }
-.resume .details_col .details h4{
+
+.resume .details_col .details h4 {
         font-size: 25px;
         font-weight: 700;
         color: var(--secondary);
         padding: 30px 0 10px;
 }
-.resume .details_col .details h5{
+
+.resume .details_col .details h5 {
         font-size: 20px;
         font-weight: 600;
         color: var(--p);
 }
-.resume .details_col .details p{
+
+.resume .details_col .details p {
         font-size: 16px;
         font-weight: 400;
         color: var(--p);
         width: 510px;
         padding: 20px 0 30px;
-        border-bottom: 1px solid green;
+        border-bottom: 1px solid #D1D1D1;
 }
-.btn_container{
+
+.btn_container {
         display: flex;
         justify-content: center;
         padding-top: 50px;
 }
+
 /* ===================
         Resume End
 ==================== */
 /* ===================
-        Navbar Start
+   Amazing works Start
 ==================== */
+#amazing {
+        padding-top: 130px;
+}
+
+.amazing h2 {
+        font-size: 35px;
+        font-weight: 700;
+        color: var(--primary);
+        padding-bottom: 50px;
+        text-align: center;
+}
+
+.gallery {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 250px;
+        grid-template-areas:
+
+        "one two three"
+        "four two six"
+        "four five six";
+}
+
+.gallery img {
+        height: 100%;
+        object-fit: cover;
+}
+
+.box_1 {
+        grid-area: one
+}
+
+.box_2 {
+        grid-area: two;
+}
+
+.box_3 {
+        grid-area: three;
+}
+
+.box_4 {
+        grid-area: four;
+}
+
+.box_5 {
+        grid-area: five;
+}
+
+.box_6 {
+        grid-area: six;
+}
+
 /* ===================
-        Navbar End
+   Amazing works End
 ==================== */
 /* ===================
         Navbar Start
