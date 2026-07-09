@@ -1,3 +1,4 @@
+/* Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 /* =======================
@@ -20,10 +21,10 @@ img {
         vertical-align: middle;
 }
 
-.container {
-        width: 1200px;
-        margin: auto;
-        max-width: 1200px;
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
 }
 
 .row {
@@ -45,7 +46,7 @@ img {
         padding: 18px 35px;
         background-color: var(--brand);
         border-radius: 5px;
-        border: navajowhite;
+        border: none;
         color: #fff;
         font-size: 20px;
         font-weight: 800;
@@ -56,7 +57,7 @@ img {
         padding: 18px 35px;
         background-color: transparent;
         border-radius: 5px;
-        border: navajowhite;
+        border: none;
         color: var(--brand);
         font-size: 20px;
         font-weight: 800;
@@ -99,6 +100,21 @@ nav ul li a {
         color: var(--secondary);
 }
 
+/* ================================== Navbar Responsive ====================== */
+@media (max-width:768px){
+
+nav{
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+}
+
+nav ul{
+    flex-direction:column;
+}
+
+}
+
 /* ===================
         Navbar End
 ==================== */
@@ -109,6 +125,7 @@ nav ul li a {
         display: flex;
         justify-content: space-between;
         background-color: rgba(234, 207, 188, 0.30);
+        border-radius: 10px;
 }
 
 .banner_left h2 {
@@ -135,7 +152,40 @@ nav ul li a {
         display: flex;
         gap: 30px;
 }
+.banner_right img{
+        background: transparent;
+}
 
+/* ============== Banner Responsive ======================== */
+@media (max-width:992px){
+
+.banner_parent{
+    flex-direction:column;
+    text-align:center;
+    gap:40px;
+}
+
+.banner_left{
+    order:2;
+}
+
+.banner_right{
+    order:1;
+}
+
+.banner_btn{
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.banner_left h3{
+    font-size:55px;
+}
+
+.banner_left h2{
+    font-size:35px;
+}
+}
 /* ===================
         Banner End
 ==================== */
@@ -150,6 +200,7 @@ nav ul li a {
         background-color: #FFF8F3;
         flex-direction: column;
         padding: 130px 155px;
+        border-radius: 10px;
 }
 
 .top_col {
@@ -186,7 +237,19 @@ nav ul li a {
         font-weight: 700;
         color: var(--secondary);
 }
+/* ================== About Responsive ====================== */
+@media (max-width:768px){
 
+#about .row{
+    padding:50px 20px;
+}
+
+.bottom_col{
+    flex-direction:column;
+    gap:20px;
+}
+
+}
 /* ===================
         About End
 ==================== */
@@ -243,6 +306,30 @@ nav ul li a {
         gap: 10px;
 }
 
+/* =============== What i DO ==================== */
+@media (max-width:992px){
+
+.what_i_do .bottom_col{
+    flex-wrap:wrap;
+}
+
+.what_i_do .card{
+    width:calc(50% - 25px);
+}
+
+}
+
+@media (max-width:576px){
+
+.what_i_do .bottom_col{
+    flex-direction:column;
+}
+
+.what_i_do .card{
+    width:100%;
+}
+
+}
 /* ===================
         What I Do End
 ==================== */
@@ -291,7 +378,8 @@ nav ul li a {
         font-size: 16px;
         font-weight: 400;
         color: var(--p);
-        width: 510px;
+        width:100%;
+        max-width:510px;
         padding: 20px 0 30px;
         border-bottom: 1px solid #D1D1D1;
 }
@@ -302,6 +390,22 @@ nav ul li a {
         padding-top: 50px;
 }
 
+/* ========================= Resume Responsive ============== */
+@media (max-width:992px){
+
+.resume .details_col{
+    grid-template-columns:1fr;
+}
+
+.resume .details_col .details p{
+    width:100%;
+}
+
+.resume h2{
+    padding-bottom:60px;
+}
+
+}
 /* ===================
         Resume End
 ==================== */
@@ -360,7 +464,51 @@ nav ul li a {
 .box_6 {
         grid-area: six;
 }
+/* ============================== Gallery Responsive =============== */
+@media (max-width:992px){
 
+.gallery{
+
+grid-template-columns:repeat(2,1fr);
+
+grid-template-areas:
+
+"one two"
+
+"three four"
+
+"five six";
+
+}
+
+}
+
+/* mobile */
+@media (max-width:576px){
+
+.gallery{
+
+grid-template-columns:1fr;
+
+grid-template-areas:
+
+"one"
+
+"two"
+
+"three"
+
+"four"
+
+"five"
+
+"six";
+
+grid-auto-rows:250px;
+
+}
+
+}
 /* ===================
    Amazing works End
 ==================== */
@@ -419,7 +567,7 @@ footer {
 }
 
 .footer .footer_right form input,
-textarea {
+.footer .footer_right form textarea{
         border: none;
         padding: 18px 30px 18px;
         border-radius: 5px;
@@ -428,7 +576,54 @@ textarea {
         margin-bottom: 24px;
         background-color: white;
 }
+/* ================== Footer Responsive ================= */
+@media (max-width:768px){
 
+.footer{
+    flex-direction:column;
+    padding:60px 20px;
+    gap:50px;
+}
+
+}
 /* ===================
         Footer End
 ==================== */
+
+/* Buttons */
+@media (max-width:576px){
+
+.banner_btn{
+    flex-direction:column;
+}
+
+.common_btn,
+.outline_btn{
+    width:100%;
+}
+
+}
+/* Typography */
+@media (max-width:576px){
+
+.logo{
+    font-size:35px;
+}
+
+.banner_left h2{
+    font-size:28px;
+}
+
+.banner_left h3{
+    font-size:42px;
+}
+
+.top_col h2,
+.resume h2,
+.amazing h2,
+.footer h2{
+    font-size:28px;
+}
+
+}
+/*  */
