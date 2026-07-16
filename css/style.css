@@ -10,9 +10,18 @@
 a{
     text-decoration: none;
 }
+img{
+        width: 100%;
+        max-width: 100%;
+        vertical-align: middle;
+}
 .container{
-    max-width: 1200px;
+    width: 1200px;
     margin: auto;
+    max-width: 1200px;
+}
+.row{
+        display: flex;
 }
 /* =====================
        Common CSS
@@ -111,22 +120,150 @@ nav ul li a{
         Banner End
 ==================== */
 /* ===================
-        Navbar Start
+        About Start
+==================== */
+#about{
+        padding-top: 130px;
+}
+#about .row{
+        background-color: #FFF8F3;
+        flex-direction: column;
+        padding: 130px 155px;
+}
+.top_col{
+        text-align: center;
+}
+.top_col h2{
+        font-size: 35px;
+        font-weight: 700;
+        color: var(--primary);
+}
+.top_col p{
+        font-size: 18px;
+        font-weight: 400;
+        color: var(--p);
+        padding: 30px 0;
+}
+.bottom_col{
+        display: flex;
+        gap: 50px;
+}
+.info p{
+        font-size: 20px;
+        font-weight: 400;
+        color: var(--p);
+        text-align: center;
+}
+.info h3{
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--secondary);
+}
+/* ===================
+        About End
 ==================== */
 /* ===================
-        Navbar End
+        What I Do Start
+==================== */
+#what_i_do{
+        padding-top: 130px;
+        margin: auto;
+}
+.what_i_do .top_col h2{
+        font-size: 35px;
+        font-weight: 700;
+        color: var(--primary);
+}
+.what_i_do .top_col p{
+        max-width: 910px;
+        margin: auto;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        color: var(--p);
+        padding: 30px 0 50px;
+}
+.what_i_do .bottom_col .card{
+        padding: 30px;
+        box-shadow: 0px 6px 50px 0px rgba(0,0,0,0.06);
+        border-radius: 5px;
+}
+.what_i_do .bottom_col h2{
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--primary);
+        padding: 30px 0 20px;
+}
+.what_i_do .bottom_col p{
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--p);
+}
+.what_i_do .bottom_col .card img{
+        width: 50px;
+        object-fit: cover;
+}
+.what_i_do .bottom_col .card_img{
+        display: flex;
+        gap: 10px;
+}
+
+/* ===================
+        What I Do End
 ==================== */
 /* ===================
-        Navbar Start
+        Resume Start
 ==================== */
+#resume{
+        padding: 130px;
+        margin: auto;
+}
+.resume{
+        background-color: pink; 
+}
+.resume h2{
+        font-size: 35px;
+        font-weight: 700;
+        color: var(--primary);
+        text-align: center;
+        padding-bottom: 110px;
+}
+.resume .details_col{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+}
+.resume .details_col .details h3{
+        font-size: 30px;
+        font-weight: 700;
+        color: var(--secondary);
+}
+.resume .details_col .details h4{
+        font-size: 25px;
+        font-weight: 700;
+        color: var(--secondary);
+        padding: 30px 0 10px;
+}
+.resume .details_col .details h5{
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--p);
+}
+.resume .details_col .details p{
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--p);
+        width: 510px;
+        padding: 20px 0 30px;
+        border-bottom: 1px solid green;
+}
+.btn_container{
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+}
 /* ===================
-        Navbar End
-==================== */
-/* ===================
-        Navbar Start
-==================== */
-/* ===================
-        Navbar End
+        Resume End
 ==================== */
 /* ===================
         Navbar Start
