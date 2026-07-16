@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/* =======================
+         Reset CSS
+======================= */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+/* =====================
+       Common CSS
+===================== */
+:root{
+    --primary: #181818;
+    --secondary: #474747;
+    --p: #757575;
+    --brand: #FD6E0A;
+
+}
+.common_btn{
+    padding: 18px 35px;
+    background-color: var(--brand);
+    border-radius: 5px;
+    border: navajowhite;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
+}
+.outline_btn{
+    padding: 18px 35px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: navajowhite;
+    color: var(--brand);
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
+    border: 1px solid #FD6E0A;
+}
+/* ===================
+        Navbar Start
+==================== */
+/* ===================
+        Navbar End
+==================== */
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+.logo{
+    font-size: 45px;
+    font-weight: 800;
+    color: var(--primary);
+}
+.logo span{
+    color: var(--brand);
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+nav ul li a{
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--secondary);
+}
+/* ===================
+        Navbar End
+==================== */
+/* ===================
+        Banner Start
+==================== */
+.banner_parent{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(234, 207, 188, 0.30);
+}
+.banner_left h2{
+    font-size: 45px;
+    font-weight: 600;
+    color: var(--secondary);
+}
+.banner_left h3{
+    font-size: 85px;
+    font-weight: 700;
+    color: var(--primary);
+    padding: 5px 0 20px;
+}
+.banner_left p{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--primary);
+    padding-bottom: 30px;
+}
+.banner_btn{
+    display: flex;
+    gap: 30px;
+}
+/* ===================
+        Banner End
+==================== */
+/* ===================
+        Navbar Start
+==================== */
+/* ===================
+        Navbar End
+==================== */
+/* ===================
+        Navbar Start
+==================== */
+/* ===================
+        Navbar End
+==================== */
+/* ===================
+        Navbar Start
+==================== */
+/* ===================
+        Navbar End
+==================== */
+/* ===================
+        Navbar Start
+==================== */
+/* ===================
+        Navbar End
+==================== */
+/* ===================
+        Navbar Start
+==================== */
+/* ===================
+        Navbar End
+==================== */
+/* ===================
+        Navbar Start
+==================== */
+/* ===================
+        Navbar End
+==================== */
